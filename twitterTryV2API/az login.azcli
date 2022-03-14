@@ -1,0 +1,15 @@
+az login
+
+User@Azure
+
+az vm list
+
+az account list
+
+az account set --subscription 'Azure for Students'
+
+az group create --location westus --name MyRG
+
+az vm create -n myVM -g MyRG --image UbuntuLTS --admin-username 'username' --generate-ssh-keys
+
+
